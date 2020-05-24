@@ -4,8 +4,8 @@ Since the dependencies are deprecated, I will be making it run before making my 
 
 Our aim is combining ICM with a CLS-inspired world model, and test our agents in the doom environment with sparse and very sparse reward.
 
-To install and build this version: 
-    ```Shell
+To install and build this version:
+    
       # install the code
           git clone https://github.com/mmervecerit/noreward-rl.git
           cd noreward-rl/
