@@ -12,22 +12,10 @@ To install and build this version:
           virtualenv curiosity
           source $PWD/curiosity/bin/activate
   
-      # ZDoom dependencies
-        sudo apt-get install build-essential zlib1g-dev libsdl2-dev libjpeg-dev \
-        nasm tar libbz2-dev libgtk2.0-dev cmake git libfluidsynth-dev libgme-dev \
-        libopenal-dev timidity libwildmidi-dev unzip
-
-      # Boost libraries
-        sudo apt-get install libboost-all-dev
-
-      # Python 2 dependencies
-        sudo apt-get install python-dev python-pip
-        pip install numpy
-        # or install Anaconda 2 and add it to PATH
-        
-      #VizDoom
-        pip install vizdoom
-        
+      #Build your own VizDoom
+          cd 
+          git clone https://github.com/mwydmuch/ViZDoom.git
+          
       # Gym-Doom
         pip install gym-doom
 
@@ -39,7 +27,6 @@ To install and build this version:
 [Deepak Pathak](https://people.eecs.berkeley.edu/~pathak/), [Pulkit Agrawal](https://people.eecs.berkeley.edu/~pulkitag/), [Alexei A. Efros](https://people.eecs.berkeley.edu/~efros/), [Trevor Darrell](https://people.eecs.berkeley.edu/~trevor/)<br/>
 University of California, Berkeley<br/>
 
-<img src="images/mario1.gif" width="300">    <img src="images/vizdoom.gif" width="351">
 
 This is a tensorflow based implementation for our [ICML 2017 paper on curiosity-driven exploration for reinforcement learning](http://pathak22.github.io/noreward-rl/). Idea is to train agent with intrinsic curiosity-based motivation (ICM) when external rewards from environment are sparse. Surprisingly, you can use ICM even when there are no rewards available from the environment, in which case, agent learns to explore only out of curiosity: 'RL without rewards'. If you find this work useful in your research, please cite:
 
