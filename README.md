@@ -1,3 +1,14 @@
+Updated work, remixing the ICM paper below. 
+
+Since the dependencies are deprecated, I will be making it run before making my architectural and algorithmic changes. 
+
+Our aim is combining ICM with a CLS-inspired world model, and test our agents in the doom environment with sparse and very sparse reward.
+
+To clone this version: 
+    git clone https://github.com/mmervecerit/noreward-rl.git
+
+
+
 ## Curiosity-driven Exploration by Self-supervised Prediction ##
 #### In ICML 2017 [[Project Website]](http://pathak22.github.io/noreward-rl/) [[Demo Video]](http://pathak22.github.io/noreward-rl/index.html#demoVideo)
 
