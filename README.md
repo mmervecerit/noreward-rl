@@ -4,8 +4,32 @@ Since the dependencies are deprecated, I will be making it run before making my 
 
 Our aim is combining ICM with a CLS-inspired world model, and test our agents in the doom environment with sparse and very sparse reward.
 
-To clone this version: 
-    git clone https://github.com/mmervecerit/noreward-rl.git
+To install and build this version: 
+    ```Shell
+      # install the code
+          git clone https://github.com/mmervecerit/noreward-rl.git
+          cd noreward-rl/
+          virtualenv curiosity
+          source $PWD/curiosity/bin/activate
+  
+      # ZDoom dependencies
+        sudo apt-get install build-essential zlib1g-dev libsdl2-dev libjpeg-dev \
+        nasm tar libbz2-dev libgtk2.0-dev cmake git libfluidsynth-dev libgme-dev \
+        libopenal-dev timidity libwildmidi-dev unzip
+
+      # Boost libraries
+        sudo apt-get install libboost-all-dev
+
+      # Python 2 dependencies
+        sudo apt-get install python-dev python-pip
+        pip install numpy
+        # or install Anaconda 2 and add it to PATH
+        
+      #VizDoom
+        pip install vizdoom
+        
+      # Gym-Doom
+        pip install gym-doom
 
 
 
